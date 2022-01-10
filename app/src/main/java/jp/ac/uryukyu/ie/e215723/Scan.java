@@ -21,7 +21,6 @@ public class Scan {
             if(intAnswer == 0){
                 System.out.println("答えを再入力してください");
             }else if(intAnswer <= num){
-                System.out.println("あなたの答え:" + intAnswer);
                 i++;
             }else{
                 System.out.println("選択肢の中から選択してください。");
