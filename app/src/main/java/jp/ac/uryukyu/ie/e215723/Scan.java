@@ -2,6 +2,10 @@ package jp.ac.uryukyu.ie.e215723;
 
 import java.util.Scanner;
 
+/**
+ * ユーザーから標準入力を受け、それをint型に直し返すクラス。
+ * 標準入力が数字であるか、選択肢の中から選んでいるか確認するようにしている。
+ */
 public class Scan {
     private Scanner sc = new Scanner(System.in);
 
@@ -13,8 +17,8 @@ public class Scan {
     public int input(int num){
         int intAnswer = 0;
 
+        System.out.println("答えを入力してください。");
         for(int i = 0; i == 0;){
-            System.out.println("答えを入力してください。");
             String answer = this.sc.nextLine();
             intAnswer = confOfAnswer(answer);
 
