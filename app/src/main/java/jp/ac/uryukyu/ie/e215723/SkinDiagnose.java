@@ -7,7 +7,7 @@ package jp.ac.uryukyu.ie.e215723;
 public class SkinDiagnose {
     private Scan sc = new Scan();
 
-    SkinDiagnose(){
+    public SkinDiagnose(){
         q1();
     }
 

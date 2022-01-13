@@ -18,7 +18,7 @@ public class MakeSheet{
      * @param sumSensitive 全ての敏感さに関する質問の数。
      */
     MakeSheet(int dryness, int oiliness, int sensitive, int sumDryness, int sumOiliness, int sumSensitive){
-        System.out.println("黒星があなたの度合いです。\n右であるほどよく当てはまります。\n");
+        System.out.println("黒星があなたの度合いです。\n右であるほどよく当てはまります。\n黒星がない場合は全く当てはまりません。\n");
         System.out.println("脂性度");
         printList(makeList(oiliness, sumOiliness));
         System.out.println("乾燥度");

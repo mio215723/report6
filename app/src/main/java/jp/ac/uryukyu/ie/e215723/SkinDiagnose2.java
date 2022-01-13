@@ -32,7 +32,7 @@ public class SkinDiagnose2 {
      */
     int sumSensitive = 5;
 
-    SkinDiagnose2(){
+    public SkinDiagnose2(){
         q1();
     }
 
