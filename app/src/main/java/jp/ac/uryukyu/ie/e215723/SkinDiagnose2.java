@@ -113,15 +113,12 @@ public class SkinDiagnose2 {
      * 質問文を表示し、ユーザーの選択によりdryness（乾燥度）やoiliness（脂性度）、sumDryness、sumOilinessの変数を変更するメソッド。
      */
     public void q7(){
-        System.out.println("\nQ.夕方に化粧崩れを感じる。\n1:皮脂による崩れを感じる\n2:乾燥による崩れを感じる\n3:いいえ\n4:分からない");
-        int ans = sc.input(4);
+        System.out.println("\nQ.夕方に化粧崩れを感じる。\n1:皮脂による崩れを感じる\n2:乾燥による崩れを感じる\n3:いいえ");
+        int ans = sc.input(3);
         if(ans == 1){
             oiliness++;
         }else if(ans == 2){
             dryness++;
-        }else if(ans == 4){
-            sumDryness--;
-            sumOiliness--;
         }
         this.q8();
     }
@@ -143,12 +140,10 @@ public class SkinDiagnose2 {
      * 敏感さに関する質問文を表示し、当てはまるならsensitive（敏感度）やsumSensitiveを変更するメソッド。
      */
     public void q9(){
-        System.out.println("\nQ.化粧品かぶれしたことがある。\n1:はい\n2:いいえ\n3:分からない");
-        int ans = sc.input(3);
+        System.out.println("\nQ.化粧品かぶれしたことがある。\n1:はい\n2:いいえ");
+        int ans = sc.input(2);
         if(ans == 1){
             sensitive++;
-        }else if(ans == 3){
-            sumSensitive--;
         }
             this.q10();
     }

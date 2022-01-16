@@ -23,11 +23,11 @@ public class Scan {
             intAnswer = confOfAnswer(answer);
 
             if(intAnswer == 0){
-                System.out.println("答えを再入力してください");
+                System.out.println("答えを再入力してください。");
             }else if(intAnswer <= num){
                 i++;
             }else{
-                System.out.println("選択肢の中から選択してください。");
+                System.out.println("答えを再入力してください。");
             }
         }
         return intAnswer;
